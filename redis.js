@@ -3,7 +3,7 @@ var client = redis.createClient(6379, "127.0.0.1", {}); // this creates a new cl
 
 var redisM = {
     set: function (info,value) {
-        // 鍵值對
+        // 鍵值對2
         client.set(info, value, redis.print);
     },
     get:function (info) {
